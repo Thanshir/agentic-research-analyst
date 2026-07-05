@@ -1,0 +1,96 @@
+{
+  "total_cases": 10,
+  "average_score": 0.66,
+  "results": [
+    {
+      "id": "arithmetic_basic",
+      "category": "calculator_tool_use",
+      "question": "If a service costs $0.023 per hour, how much does it cost to run for 720 hours (a full month)?",
+      "answer": "$16.56",
+      "score": 1.0,
+      "latency_seconds": 1.74,
+      "error": null
+    },
+    {
+      "id": "current_events_search",
+      "category": "web_search_tool_use",
+      "question": "What is the current version of Python as of today?",
+      "answer": "I'm unable to provide the current version of Python as of today due to repeated tool call failures.",
+      "score": 0.0,
+      "latency_seconds": 16.22,
+      "error": null
+    },
+    {
+      "id": "comparison_question",
+      "category": "reasoning_and_search",
+      "question": "Compare on-demand vs spot pricing for AWS EC2 in one sentence.",
+      "answer": "On-demand pricing for AWS EC2 provides a fixed rate for instances, while spot pricing offers a discounted rate for unused capacity, but with the risk of instance interruption.",
+      "score": 1.0,
+      "latency_seconds": 70.72,
+      "error": null
+    },
+    {
+      "id": "multi_step_calculation",
+      "category": "multi_step_calculator",
+      "question": "A company has 3 servers each costing $45/month and 2 databases each costing $80/month. What is the total monthly infrastructure cost?",
+      "answer": "$295",
+      "score": 1.0,
+      "latency_seconds": 21.06,
+      "error": null
+    },
+    {
+      "id": "ambiguous_needs_clarification_signal",
+      "category": "should_flag_low_confidence_or_nuance",
+      "question": "What is the best cloud provider?",
+      "answer": "The best cloud provider depends on specific needs and requirements. Popular options include Amazon Web Services, Microsoft Azure, and Google Cloud Platform.",
+      "score": 0.8,
+      "latency_seconds": 69.38,
+      "error": null
+    },
+    {
+      "id": "factual_lookup",
+      "category": "web_search_tool_use",
+      "question": "Who is the current CEO of Groq?",
+      "answer": "The current CEO of Groq is Jonathan Ross.",
+      "score": 0.8,
+      "latency_seconds": 71.52,
+      "error": null
+    },
+    {
+      "id": "no_tool_needed",
+      "category": "knowledge_no_tool_needed",
+      "question": "What does the acronym API stand for?",
+      "answer": "API stands for Application Programming Interface",
+      "score": 1.0,
+      "latency_seconds": 70.81,
+      "error": null
+    },
+    {
+      "id": "numeric_precision",
+      "category": "calculator_tool_use",
+      "question": "What is 17% of 4500?",
+      "answer": "17% of 4500 is 765.0",
+      "score": 1.0,
+      "latency_seconds": 23.61,
+      "error": null
+    },
+    {
+      "id": "requires_two_searches",
+      "category": "multi_tool_reasoning",
+      "question": "Compare the free tier limits of Groq and Tavily.",
+      "answer": "The free tier limits of Groq and Tavily could not be determined due to a tool-call generation error.",
+      "score": 0.0,
+      "latency_seconds": 73.45,
+      "error": null
+    },
+    {
+      "id": "edge_case_empty_context",
+      "category": "hallucination_resistance",
+      "question": "Summarize the plot of a movie that does not exist called 'Xyzzyplex 2099'.",
+      "answer": "",
+      "score": 0.0,
+      "latency_seconds": 18.27,
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kwfng2cbfy2rhxg03mdrp41t` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99241, Requested 1253. Please try again in 7m6.816s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+    }
+  ]
+}

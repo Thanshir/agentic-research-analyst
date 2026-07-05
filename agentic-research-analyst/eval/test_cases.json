@@ -1,0 +1,62 @@
+[
+  {
+    "id": "arithmetic_basic",
+    "question": "If a service costs $0.023 per hour, how much does it cost to run for 720 hours (a full month)?",
+    "expected_contains": ["16.56", "16.6"],
+    "category": "calculator_tool_use"
+  },
+  {
+    "id": "current_events_search",
+    "question": "What is the current version of Python as of today?",
+    "expected_contains": ["3.1"],
+    "category": "web_search_tool_use"
+  },
+  {
+    "id": "comparison_question",
+    "question": "Compare on-demand vs spot pricing for AWS EC2 in one sentence.",
+    "expected_contains": ["spot", "cheaper", "on-demand"],
+    "category": "reasoning_and_search"
+  },
+  {
+    "id": "multi_step_calculation",
+    "question": "A company has 3 servers each costing $45/month and 2 databases each costing $80/month. What is the total monthly infrastructure cost?",
+    "expected_contains": ["295"],
+    "category": "multi_step_calculator"
+  },
+  {
+    "id": "ambiguous_needs_clarification_signal",
+    "question": "What is the best cloud provider?",
+    "expected_contains": [],
+    "category": "should_flag_low_confidence_or_nuance"
+  },
+  {
+    "id": "factual_lookup",
+    "question": "Who is the current CEO of Groq?",
+    "expected_contains": [],
+    "category": "web_search_tool_use"
+  },
+  {
+    "id": "no_tool_needed",
+    "question": "What does the acronym API stand for?",
+    "expected_contains": ["application programming interface"],
+    "category": "knowledge_no_tool_needed"
+  },
+  {
+    "id": "numeric_precision",
+    "question": "What is 17% of 4500?",
+    "expected_contains": ["765"],
+    "category": "calculator_tool_use"
+  },
+  {
+    "id": "requires_two_searches",
+    "question": "Compare the free tier limits of Groq and Tavily.",
+    "expected_contains": [],
+    "category": "multi_tool_reasoning"
+  },
+  {
+    "id": "edge_case_empty_context",
+    "question": "Summarize the plot of a movie that does not exist called 'Xyzzyplex 2099'.",
+    "expected_contains": [],
+    "category": "hallucination_resistance"
+  }
+]
